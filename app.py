@@ -40,3 +40,11 @@ def cart():
             status=200,
             mimetype='application/json'
         )
+    else:
+        return Response(
+            response=json.dumps({
+                "message": "method not yet supported"
+            }),
+            status=404,
+            mimetype='application/json'
+        )
