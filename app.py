@@ -27,3 +27,16 @@ def cart():
             status=200,
             mimetype='application/json'
         )
+    elif request.method == 'POST':
+        usertoken = request.form['usertoken']
+        itemtoken = request.form['useritem']
+        
+        return Response(
+            response=json.dumps({
+                "message": "added to cart"
+                "user": usertoken,
+                "item": itemtoken
+            }),
+            status=200,
+            mimetype='application/json'
+        )

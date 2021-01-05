@@ -1,0 +1,4 @@
+1. Cart routes manages CRUD for cart collection.
+2. Checkout routes confirms payment for cart.
+3. POST and PUT cart routes only accept tokens for both user and item.
+4. Use MongoDb for speed and for the _id key.
